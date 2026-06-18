@@ -104,15 +104,16 @@ export default function TvGuide() {
 				display: "flex",
 				flexDirection: "column",
 				minHeight: 0,
-				p: 1,
+				p: { xs: 0.75, sm: 1 },
 				boxSizing: "border-box",
 			}}
 		>
 			<Box
 				sx={{
 					display: "flex",
+					flexDirection: { xs: "column", sm: "row" },
 					gap: 1,
-					alignItems: "center",
+					alignItems: { xs: "stretch", sm: "center" },
 					mb: 1,
 					flexShrink: 0,
 				}}
@@ -122,6 +123,10 @@ export default function TvGuide() {
 					placeholder="Search programs by title or description..."
 					value={searchQuery}
 					onChange={(event) => setSearchQuery(event.target.value)}
+					sx={{
+						width: { xs: "100%", sm: "auto" },
+						flex: { sm: 1 },
+					}}
 					slotProps={{
 						input: {
 							startAdornment: (
@@ -135,7 +140,11 @@ export default function TvGuide() {
 				<Typography
 					variant="caption"
 					color="text.secondary"
-					sx={{ whiteSpace: "nowrap" }}
+					sx={{
+						whiteSpace: "nowrap",
+						px: { xs: 0.5, sm: 0 },
+						alignSelf: { xs: "flex-start", sm: "center" },
+					}}
 				>
 					{formatLocalTime(timeWindow.startUnix)} -{" "}
 					{formatLocalTime(timeWindow.endUnix)}

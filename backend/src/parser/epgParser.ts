@@ -1,12 +1,10 @@
-import fs from "node:fs";
-import path from "node:path";
 import { gunzipSync } from "node:zlib";
 import { XMLParser } from "fast-xml-parser";
 import type { Database } from "../database/db";
 import { getDb } from "../database/db";
+import { generateMockEpgXml } from "./mockEpgGenerator";
 
 const INSERT_BATCH_SIZE = 150;
-const MOCK_EPG_PATH = path.join(process.cwd(), "mock-epg.xml");
 
 interface ParsedChannel {
 	id: string;
@@ -230,19 +228,15 @@ function shouldUseMockEpg(sourceUrl?: string): boolean {
 	return !url || url.trim().length === 0;
 }
 
-function readMockEpg(): string {
-	if (!fs.existsSync(MOCK_EPG_PATH)) {
-		throw new Error(`Mock EPG file not found: ${MOCK_EPG_PATH}`);
-	}
-
-	return fs.readFileSync(MOCK_EPG_PATH, "utf-8");
+function generateMockEpg(): string {
+	return generateMockEpgXml();
 }
 
 async function loadEpgXml(
 	sourceUrl?: string,
 ): Promise<{ xml: string; source: string }> {
 	if (shouldUseMockEpg(sourceUrl)) {
-		return { xml: readMockEpg(), source: MOCK_EPG_PATH };
+		return { xml: generateMockEpg(), source: "mock-epg-generator" };
 	}
 
 	const url = sourceUrl ?? process.env.EPG_SOURCE_URL;

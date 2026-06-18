@@ -34,6 +34,7 @@ The project is split into three parts within a single repository:
 - Communication happens over a REST API.
 - Enable CORS in the backend during development so the local frontend (`localhost`) can call the backend running on a different IP/port.
 
+
 ---
 
 ## 🛠️ Database Schema (SQLite)

@@ -13,41 +13,1594 @@
     <icon src="https://example.com/icons/zdf.png"/>
   </channel>
 
-  <programme start="20260618060000 +0000" stop="20260618093000 +0000" channel="bbc-one.uk">
+  <programme start="20260617000000 +0000" stop="20260617003000 +0000" channel="bbc-one.uk">
     <title>Breakfast</title>
-    <desc>Morning news and weather.</desc>
+    <desc>Morning news, weather, and interviews.</desc>
     <category>News</category>
   </programme>
-  <programme start="20260618093000 +0000" stop="20260618103000 +0000" channel="bbc-one.uk">
+  <programme start="20260617003000 +0000" stop="20260617013000 +0000" channel="bbc-one.uk">
     <title>Homes Under the Hammer</title>
-    <desc>Property renovation series.</desc>
+    <desc>Property auctions and renovation stories.</desc>
     <category>Entertainment</category>
   </programme>
-  <programme start="20260618180000 +0000" stop="20260618190000 +0000" channel="bbc-one.uk">
-    <title>BBC News at Six</title>
-    <desc>Evening national news bulletin.</desc>
+  <programme start="20260617013000 +0000" stop="20260617023000 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
     <category>News</category>
   </programme>
-
-  <programme start="20260618073000 +0000" stop="20260618090000 +0000" channel="ard.de">
+  <programme start="20260617023000 +0000" stop="20260617040000 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617040000 +0000" stop="20260617060000 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617060000 +0000" stop="20260617064500 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617064500 +0000" stop="20260617074500 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617074500 +0000" stop="20260617081500 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617081500 +0000" stop="20260617101500 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260617101500 +0000" stop="20260617111500 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617111500 +0000" stop="20260617114500 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617114500 +0000" stop="20260617124500 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617124500 +0000" stop="20260617134500 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617134500 +0000" stop="20260617151500 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617151500 +0000" stop="20260617171500 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617171500 +0000" stop="20260617180000 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617180000 +0000" stop="20260617190000 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617190000 +0000" stop="20260617193000 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260617193000 +0000" stop="20260617213000 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617213000 +0000" stop="20260617223000 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617223000 +0000" stop="20260617230000 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617230000 +0000" stop="20260618000000 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618000000 +0000" stop="20260618010000 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618010000 +0000" stop="20260618023000 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618023000 +0000" stop="20260618043000 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618043000 +0000" stop="20260618051500 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618051500 +0000" stop="20260618061500 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260618061500 +0000" stop="20260618064500 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618064500 +0000" stop="20260618084500 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618084500 +0000" stop="20260618094500 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618094500 +0000" stop="20260618101500 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618101500 +0000" stop="20260618111500 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618111500 +0000" stop="20260618121500 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618121500 +0000" stop="20260618134500 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618134500 +0000" stop="20260618154500 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618154500 +0000" stop="20260618163000 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260618163000 +0000" stop="20260618173000 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618173000 +0000" stop="20260618180000 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618180000 +0000" stop="20260618200000 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618200000 +0000" stop="20260618210000 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618210000 +0000" stop="20260618213000 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618213000 +0000" stop="20260618223000 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618223000 +0000" stop="20260618233000 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618233000 +0000" stop="20260619010000 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619010000 +0000" stop="20260619030000 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260619030000 +0000" stop="20260619034500 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619034500 +0000" stop="20260619044500 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619044500 +0000" stop="20260619051500 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619051500 +0000" stop="20260619071500 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619071500 +0000" stop="20260619081500 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619081500 +0000" stop="20260619084500 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619084500 +0000" stop="20260619094500 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619094500 +0000" stop="20260619104500 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619104500 +0000" stop="20260619121500 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260619121500 +0000" stop="20260619141500 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619141500 +0000" stop="20260619150000 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619150000 +0000" stop="20260619160000 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619160000 +0000" stop="20260619163000 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619163000 +0000" stop="20260619183000 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619183000 +0000" stop="20260619193000 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619193000 +0000" stop="20260619200000 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619200000 +0000" stop="20260619210000 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619210000 +0000" stop="20260619220000 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260619220000 +0000" stop="20260619233000 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619233000 +0000" stop="20260620013000 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620013000 +0000" stop="20260620021500 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620021500 +0000" stop="20260620031500 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620031500 +0000" stop="20260620034500 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620034500 +0000" stop="20260620054500 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620054500 +0000" stop="20260620064500 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620064500 +0000" stop="20260620071500 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620071500 +0000" stop="20260620081500 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260620081500 +0000" stop="20260620091500 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620091500 +0000" stop="20260620104500 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620104500 +0000" stop="20260620124500 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620124500 +0000" stop="20260620133000 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620133000 +0000" stop="20260620143000 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620143000 +0000" stop="20260620150000 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620150000 +0000" stop="20260620170000 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620170000 +0000" stop="20260620180000 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620180000 +0000" stop="20260620183000 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260620183000 +0000" stop="20260620193000 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620193000 +0000" stop="20260620203000 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620203000 +0000" stop="20260620220000 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620220000 +0000" stop="20260621000000 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621000000 +0000" stop="20260621004500 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621004500 +0000" stop="20260621014500 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621014500 +0000" stop="20260621021500 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621021500 +0000" stop="20260621041500 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621041500 +0000" stop="20260621051500 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260621051500 +0000" stop="20260621054500 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621054500 +0000" stop="20260621064500 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621064500 +0000" stop="20260621074500 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621074500 +0000" stop="20260621091500 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621091500 +0000" stop="20260621111500 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621111500 +0000" stop="20260621120000 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621120000 +0000" stop="20260621130000 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621130000 +0000" stop="20260621133000 +0000" channel="bbc-one.uk">
+    <title>Doctor Who</title>
+    <desc>The Doctor faces a threat across space and time.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621133000 +0000" stop="20260621153000 +0000" channel="bbc-one.uk">
+    <title>Match of the Day</title>
+    <desc>Highlights and analysis from the weekend&apos;s football.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260621153000 +0000" stop="20260621163000 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news, weather, and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621163000 +0000" stop="20260621170000 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property auctions and renovation stories.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621170000 +0000" stop="20260621180000 +0000" channel="bbc-one.uk">
+    <title>BBC News at One</title>
+    <desc>Midday national and international news.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621180000 +0000" stop="20260621190000 +0000" channel="bbc-one.uk">
+    <title>Doctors</title>
+    <desc>Drama from the staff of a busy medical centre.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621190000 +0000" stop="20260621203000 +0000" channel="bbc-one.uk">
+    <title>Pointless</title>
+    <desc>Quiz show searching for obscure correct answers.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621203000 +0000" stop="20260621223000 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening news bulletin with regional updates.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621223000 +0000" stop="20260621231500 +0000" channel="bbc-one.uk">
+    <title>The Repair Shop</title>
+    <desc>Experts restore treasured family heirlooms.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617001500 +0000" stop="20260617004500 +0000" channel="ard.de">
     <title>Morgenmagazin</title>
     <desc>German morning show with news and interviews.</desc>
     <category>News</category>
   </programme>
-  <programme start="20260618200000 +0000" stop="20260618201500 +0000" channel="ard.de">
+  <programme start="20260617004500 +0000" stop="20260617014500 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617014500 +0000" stop="20260617024500 +0000" channel="ard.de">
     <title>Tagesschau</title>
     <desc>Main evening news from ARD.</desc>
     <category>News</category>
   </programme>
-
-  <programme start="20260618143000 +0000" stop="20260618160000 +0000" channel="zdf.de">
-    <title>Die Küchen-Schlacht</title>
-    <desc>Cooking competition show.</desc>
+  <programme start="20260617024500 +0000" stop="20260617041500 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617041500 +0000" stop="20260617061500 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
     <category>Entertainment</category>
   </programme>
-  <programme start="20260618190000 +0000" stop="20260618194500 +0000" channel="zdf.de">
+  <programme start="20260617061500 +0000" stop="20260617070000 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260617070000 +0000" stop="20260617080000 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617080000 +0000" stop="20260617083000 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260617083000 +0000" stop="20260617103000 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617103000 +0000" stop="20260617113000 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617113000 +0000" stop="20260617120000 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617120000 +0000" stop="20260617130000 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617130000 +0000" stop="20260617140000 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617140000 +0000" stop="20260617153000 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260617153000 +0000" stop="20260617173000 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617173000 +0000" stop="20260617181500 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260617181500 +0000" stop="20260617191500 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617191500 +0000" stop="20260617194500 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617194500 +0000" stop="20260617214500 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617214500 +0000" stop="20260617224500 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617224500 +0000" stop="20260617231500 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617231500 +0000" stop="20260618001500 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260618001500 +0000" stop="20260618011500 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618011500 +0000" stop="20260618024500 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260618024500 +0000" stop="20260618044500 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618044500 +0000" stop="20260618053000 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618053000 +0000" stop="20260618063000 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618063000 +0000" stop="20260618070000 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618070000 +0000" stop="20260618090000 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618090000 +0000" stop="20260618100000 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260618100000 +0000" stop="20260618103000 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618103000 +0000" stop="20260618113000 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260618113000 +0000" stop="20260618123000 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618123000 +0000" stop="20260618140000 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618140000 +0000" stop="20260618160000 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618160000 +0000" stop="20260618164500 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618164500 +0000" stop="20260618174500 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618174500 +0000" stop="20260618181500 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260618181500 +0000" stop="20260618201500 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618201500 +0000" stop="20260618211500 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260618211500 +0000" stop="20260618214500 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618214500 +0000" stop="20260618224500 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618224500 +0000" stop="20260618234500 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618234500 +0000" stop="20260619011500 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619011500 +0000" stop="20260619031500 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619031500 +0000" stop="20260619040000 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260619040000 +0000" stop="20260619050000 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619050000 +0000" stop="20260619053000 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260619053000 +0000" stop="20260619073000 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619073000 +0000" stop="20260619083000 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619083000 +0000" stop="20260619090000 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619090000 +0000" stop="20260619100000 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619100000 +0000" stop="20260619110000 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619110000 +0000" stop="20260619123000 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260619123000 +0000" stop="20260619143000 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619143000 +0000" stop="20260619151500 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260619151500 +0000" stop="20260619161500 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619161500 +0000" stop="20260619164500 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619164500 +0000" stop="20260619184500 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619184500 +0000" stop="20260619194500 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619194500 +0000" stop="20260619201500 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619201500 +0000" stop="20260619211500 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260619211500 +0000" stop="20260619221500 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619221500 +0000" stop="20260619234500 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260619234500 +0000" stop="20260620014500 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620014500 +0000" stop="20260620023000 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620023000 +0000" stop="20260620033000 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620033000 +0000" stop="20260620040000 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620040000 +0000" stop="20260620060000 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620060000 +0000" stop="20260620070000 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260620070000 +0000" stop="20260620073000 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620073000 +0000" stop="20260620083000 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260620083000 +0000" stop="20260620093000 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620093000 +0000" stop="20260620110000 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620110000 +0000" stop="20260620130000 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620130000 +0000" stop="20260620134500 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620134500 +0000" stop="20260620144500 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620144500 +0000" stop="20260620151500 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260620151500 +0000" stop="20260620171500 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620171500 +0000" stop="20260620181500 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260620181500 +0000" stop="20260620184500 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620184500 +0000" stop="20260620194500 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620194500 +0000" stop="20260620204500 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620204500 +0000" stop="20260620221500 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620221500 +0000" stop="20260621001500 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621001500 +0000" stop="20260621010000 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260621010000 +0000" stop="20260621020000 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621020000 +0000" stop="20260621023000 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260621023000 +0000" stop="20260621043000 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621043000 +0000" stop="20260621053000 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621053000 +0000" stop="20260621060000 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621060000 +0000" stop="20260621070000 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621070000 +0000" stop="20260621080000 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621080000 +0000" stop="20260621093000 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260621093000 +0000" stop="20260621113000 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621113000 +0000" stop="20260621121500 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260621121500 +0000" stop="20260621131500 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621131500 +0000" stop="20260621134500 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621134500 +0000" stop="20260621154500 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621154500 +0000" stop="20260621164500 +0000" channel="ard.de">
+    <title>Tatort</title>
+    <desc>Crime investigation in a German city.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621164500 +0000" stop="20260621171500 +0000" channel="ard.de">
+    <title>Wer weiß denn sowas?</title>
+    <desc>Celebrity panel quiz about general knowledge.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621171500 +0000" stop="20260621181500 +0000" channel="ard.de">
+    <title>Sportschau</title>
+    <desc>Sports highlights and reports.</desc>
+    <category>Sport</category>
+  </programme>
+  <programme start="20260621181500 +0000" stop="20260621191500 +0000" channel="ard.de">
+    <title>Brisant</title>
+    <desc>Magazine covering people and lifestyle topics.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621191500 +0000" stop="20260621204500 +0000" channel="ard.de">
+    <title>Panorama</title>
+    <desc>Investigative journalism and documentaries.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260621204500 +0000" stop="20260621224500 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621224500 +0000" stop="20260621233000 +0000" channel="ard.de">
+    <title>ARD Mittagsmagazin</title>
+    <desc>Midday news and current affairs.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617003000 +0000" stop="20260617010000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617010000 +0000" stop="20260617020000 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617020000 +0000" stop="20260617030000 +0000" channel="zdf.de">
     <title>heute</title>
     <desc>Evening news from ZDF.</desc>
     <category>News</category>
+  </programme>
+  <programme start="20260617030000 +0000" stop="20260617043000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617043000 +0000" stop="20260617063000 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617063000 +0000" stop="20260617071500 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617071500 +0000" stop="20260617081500 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617081500 +0000" stop="20260617084500 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260617084500 +0000" stop="20260617104500 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617104500 +0000" stop="20260617114500 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617114500 +0000" stop="20260617121500 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617121500 +0000" stop="20260617131500 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617131500 +0000" stop="20260617141500 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617141500 +0000" stop="20260617154500 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617154500 +0000" stop="20260617174500 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617174500 +0000" stop="20260617183000 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260617183000 +0000" stop="20260617193000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617193000 +0000" stop="20260617200000 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617200000 +0000" stop="20260617220000 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260617220000 +0000" stop="20260617230000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260617230000 +0000" stop="20260617233000 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260617233000 +0000" stop="20260618003000 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618003000 +0000" stop="20260618013000 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618013000 +0000" stop="20260618030000 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260618030000 +0000" stop="20260618050000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618050000 +0000" stop="20260618054500 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618054500 +0000" stop="20260618064500 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618064500 +0000" stop="20260618071500 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618071500 +0000" stop="20260618091500 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618091500 +0000" stop="20260618101500 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618101500 +0000" stop="20260618104500 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618104500 +0000" stop="20260618114500 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260618114500 +0000" stop="20260618124500 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618124500 +0000" stop="20260618141500 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618141500 +0000" stop="20260618161500 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618161500 +0000" stop="20260618170000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618170000 +0000" stop="20260618180000 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260618180000 +0000" stop="20260618183000 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618183000 +0000" stop="20260618203000 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618203000 +0000" stop="20260618213000 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260618213000 +0000" stop="20260618220000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618220000 +0000" stop="20260618230000 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618230000 +0000" stop="20260619000000 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619000000 +0000" stop="20260619013000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619013000 +0000" stop="20260619033000 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619033000 +0000" stop="20260619041500 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619041500 +0000" stop="20260619051500 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619051500 +0000" stop="20260619054500 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260619054500 +0000" stop="20260619074500 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619074500 +0000" stop="20260619084500 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619084500 +0000" stop="20260619091500 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619091500 +0000" stop="20260619101500 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619101500 +0000" stop="20260619111500 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619111500 +0000" stop="20260619124500 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619124500 +0000" stop="20260619144500 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619144500 +0000" stop="20260619153000 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260619153000 +0000" stop="20260619163000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619163000 +0000" stop="20260619170000 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619170000 +0000" stop="20260619190000 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619190000 +0000" stop="20260619200000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619200000 +0000" stop="20260619203000 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260619203000 +0000" stop="20260619213000 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260619213000 +0000" stop="20260619223000 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260619223000 +0000" stop="20260620000000 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260620000000 +0000" stop="20260620020000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620020000 +0000" stop="20260620024500 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620024500 +0000" stop="20260620034500 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620034500 +0000" stop="20260620041500 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620041500 +0000" stop="20260620061500 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620061500 +0000" stop="20260620071500 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620071500 +0000" stop="20260620074500 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620074500 +0000" stop="20260620084500 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260620084500 +0000" stop="20260620094500 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620094500 +0000" stop="20260620111500 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620111500 +0000" stop="20260620131500 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620131500 +0000" stop="20260620140000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620140000 +0000" stop="20260620150000 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260620150000 +0000" stop="20260620153000 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620153000 +0000" stop="20260620173000 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620173000 +0000" stop="20260620183000 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260620183000 +0000" stop="20260620190000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620190000 +0000" stop="20260620200000 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620200000 +0000" stop="20260620210000 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260620210000 +0000" stop="20260620223000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260620223000 +0000" stop="20260621003000 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621003000 +0000" stop="20260621011500 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621011500 +0000" stop="20260621021500 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621021500 +0000" stop="20260621024500 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260621024500 +0000" stop="20260621044500 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621044500 +0000" stop="20260621054500 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621054500 +0000" stop="20260621061500 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621061500 +0000" stop="20260621071500 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621071500 +0000" stop="20260621081500 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621081500 +0000" stop="20260621094500 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621094500 +0000" stop="20260621114500 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621114500 +0000" stop="20260621123000 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260621123000 +0000" stop="20260621133000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621133000 +0000" stop="20260621140000 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621140000 +0000" stop="20260621160000 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621160000 +0000" stop="20260621170000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition between amateur chefs.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621170000 +0000" stop="20260621173000 +0000" channel="zdf.de">
+    <title>Traumschiff</title>
+    <desc>Classic cruise ship adventure series.</desc>
+    <category>Drama</category>
+  </programme>
+  <programme start="20260621173000 +0000" stop="20260621183000 +0000" channel="zdf.de">
+    <title>heute journal</title>
+    <desc>In-depth evening news analysis.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621183000 +0000" stop="20260621193000 +0000" channel="zdf.de">
+    <title>Wetten, dass..?</title>
+    <desc>Live entertainment show with celebrity guests.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260621193000 +0000" stop="20260621210000 +0000" channel="zdf.de">
+    <title>Terra X</title>
+    <desc>Science and history documentary slot.</desc>
+    <category>Documentary</category>
+  </programme>
+  <programme start="20260621210000 +0000" stop="20260621230000 +0000" channel="zdf.de">
+    <title>ZDF-Morgenmagazin</title>
+    <desc>Morning news and talk segments.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260621230000 +0000" stop="20260621234500 +0000" channel="zdf.de">
+    <title>Volle Kanne</title>
+    <desc>Lifestyle magazine with cooking and guests.</desc>
+    <category>Entertainment</category>
   </programme>
 </tv>
