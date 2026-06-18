@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="Proxmox EPG Mock">
+  <channel id="bbc-one.uk">
+    <display-name>BBC One</display-name>
+    <icon src="https://example.com/icons/bbc-one.png"/>
+  </channel>
+  <channel id="ard.de">
+    <display-name>ARD</display-name>
+    <icon src="https://example.com/icons/ard.png"/>
+  </channel>
+  <channel id="zdf.de">
+    <display-name>ZDF</display-name>
+    <icon src="https://example.com/icons/zdf.png"/>
+  </channel>
+
+  <programme start="20260618060000 +0000" stop="20260618093000 +0000" channel="bbc-one.uk">
+    <title>Breakfast</title>
+    <desc>Morning news and weather.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618093000 +0000" stop="20260618103000 +0000" channel="bbc-one.uk">
+    <title>Homes Under the Hammer</title>
+    <desc>Property renovation series.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618180000 +0000" stop="20260618190000 +0000" channel="bbc-one.uk">
+    <title>BBC News at Six</title>
+    <desc>Evening national news bulletin.</desc>
+    <category>News</category>
+  </programme>
+
+  <programme start="20260618073000 +0000" stop="20260618090000 +0000" channel="ard.de">
+    <title>Morgenmagazin</title>
+    <desc>German morning show with news and interviews.</desc>
+    <category>News</category>
+  </programme>
+  <programme start="20260618200000 +0000" stop="20260618201500 +0000" channel="ard.de">
+    <title>Tagesschau</title>
+    <desc>Main evening news from ARD.</desc>
+    <category>News</category>
+  </programme>
+
+  <programme start="20260618143000 +0000" stop="20260618160000 +0000" channel="zdf.de">
+    <title>Die Küchen-Schlacht</title>
+    <desc>Cooking competition show.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme start="20260618190000 +0000" stop="20260618194500 +0000" channel="zdf.de">
+    <title>heute</title>
+    <desc>Evening news from ZDF.</desc>
+    <category>News</category>
+  </programme>
+</tv>
