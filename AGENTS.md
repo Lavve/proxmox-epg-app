@@ -1,41 +1,43 @@
 # AI Agent Instructions - Proxmox EPG App
 
-Du är en expert på TypeScript, Node.js, React, Material UI (MUI) och Proxmox LXC-miljöer. Din uppgift är att hjälpa till att bygga den här applikationen enligt de strikta arkitektur- och designval som beskrivs nedan.
+You are an expert in TypeScript, Node.js, React, Material UI (MUI), and Proxmox LXC environments. Your task is to help build this application according to the strict architectural and design choices outlined below.
 
-## 🚀 Projektöversikt
-Målet är att skapa en applikation i en Proxmox LXC-container som laddar ner, parsar och visar EPG-data (TV-tablå) från open-epg.com. Appen ska paketeras så att den i framtiden kan installeras via ett Proxmox VE Helper-Script.
+## 🚀 Project Overview
+The goal is to create a Proxmox LXC container application that downloads, parses, and displays EPG (TV guide) data from open-epg.com. The application must be packaged so it can be installed via a Proxmox VE Helper-Script in the future.
 
-## 🏗️ Arkitektur (Monorepo)
-Projektet är uppdelat i tre delar i samma repository:
-- `/backend`: Node.js + TypeScript + SQLite (`better-sqlite3`). API och EPG-parser.
+**CRITICAL:** All code, comments, variable names, database schemas, UI text, and logs MUST be written in English for Open Source compatibility.
+
+## 🏗️ Architecture (Monorepo)
+The project is split into three parts within a single repository:
+- `/backend`: Node.js + TypeScript + SQLite (`better-sqlite3`). API and EPG parser.
 - `/frontend`: React + TypeScript + Vite + Material UI (MUI) + TanStack Virtual.
-- `/proxmox`: Bash-skript (`install.sh`) och Nginx-konfigurationer för LXC.
+- `/proxmox`: Bash scripts (`install.sh`) and Nginx configurations for the LXC.
 
 ---
 
-## 💻 Tekniska Regler & Riktlinjer
+## 💻 Technical Rules & Guidelines
 
 ### 1. Frontend (React & UI)
-- **Teknikstack:** React (Vite), TypeScript, TanStack Virtual (för stora tidslinjer/tablåer).
-- **UI-ramverk:** Material UI (MUI).
-- **Strikta förbud:** **ANVÄND INTE TAILWIND CSS.** Ingen Tailwind-kod eller Tailwind-klasser får genereras.
-- **Designstil:** TV-tablåer kräver mycket data på skärmen. Justera MUI-komponenternas densitet (`size="small"`, tajt padding i temat) för att undvika för mycket "luft".
+- **Tech Stack:** React (Vite), TypeScript, TanStack Virtual (for large timeline/grid rendering).
+- **UI Framework:** Material UI (MUI).
+- **Strict Prohibition:** **DO NOT USE TAILWIND CSS.** No Tailwind code or classes should ever be generated.
+- **Design Style:** TV guides require high data density. Adjust MUI component density (`size="small"`, tight padding/margins in the theme) to maximize screen real estate and minimize excessive whitespace.
 
 ### 2. Backend & API (Node.js)
-- **Teknikstack:** Node.js, TypeScript, Express (eller Fastify), `fast-xml-parser`.
-- **Databas:** SQLite via biblioteket `better-sqlite3`.
-- **Prestandakrav (Viktigt):** Vid parsning av XML till SQLite *måste* alla inserts ske i en samlad SQLite-transaktion (Bulk Insert) för att undvika disk-I/O-flaskhalsar.
-- **Tidszoner:** Spara all EPG-tid i databasen som Unix Timestamps (UTC). Låt frontenden hantera konvertering till lokal tid.
+- **Tech Stack:** Node.js, TypeScript, Express (or Fastify), `fast-xml-parser`.
+- **Database:** SQLite via the `better-sqlite3` library.
+- **Performance Requirement:** When parsing XML to SQLite, all inserts *must* run inside a database transaction (Bulk Insert) to prevent disk I/O bottlenecks.
+- **Timezones:** Store all EPG times in the database as Unix Timestamps (UTC). Let the frontend handle conversion to the user's local browser time.
 
-### 3. Modularitet & Kommunikation
-- Frontend och backend måste vara helt frikopplade.
-- Kommunikation sker via ett REST API.
-- Aktivera CORS i backenden under utveckling så att lokal frontend (`localhost`) kan anropa backenden som körs på en annan IP/port.
+### 3. Modularity & Communication
+- Frontend and backend must remain completely decoupled.
+- Communication happens over a REST API.
+- Enable CORS in the backend during development so the local frontend (`localhost`) can call the backend running on a different IP/port.
 
 ---
 
-## 🛠️ Databasschema (SQLite)
-När databasen initieras ska följande struktur och index användas:
+## 🛠️ Database Schema (SQLite)
+When initializing the database, use the following structure and indexes:
 - `channels` (id, name, icon, is_enabled, is_favorite)
 - `programs` (id, channel_id, title, description, start_time [INT], end_time [INT], category)
-- Index på `programs(start_time, end_time)` och `programs(channel_id)`.
+- Indexes on `programs(start_time, end_time)` and `programs(channel_id)`.
