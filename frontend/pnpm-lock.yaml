@@ -26,6 +26,9 @@ importers:
       '@tanstack/react-virtual':
         specifier: ^3.14.3
         version: 3.14.3(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@tanstack/virtual-core':
+        specifier: ^3.17.1
+        version: 3.17.1
       react:
         specifier: ^19.2.6
         version: 19.2.7
