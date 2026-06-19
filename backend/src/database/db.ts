@@ -26,7 +26,32 @@ const SCHEMA_SQL = `
 
   CREATE INDEX IF NOT EXISTS idx_programs_time ON programs(start_time, end_time);
   CREATE INDEX IF NOT EXISTS idx_programs_channel ON programs(channel_id);
+
+  CREATE TABLE IF NOT EXISTS settings (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL
+  );
 `;
+
+function isSeedableEnvUrl(value: string | undefined): value is string {
+	const trimmed = value?.trim();
+	if (!trimmed || trimmed === "null" || trimmed === "undefined") {
+		return false;
+	}
+	return true;
+}
+
+async function seedDefaultSettings(db: Database): Promise<void> {
+	const envUrl = process.env.EPG_SOURCE_URL;
+	if (!isSeedableEnvUrl(envUrl)) {
+		return;
+	}
+
+	await db.run(
+		"INSERT INTO settings (key, value) VALUES ('epg_url', ?) ON CONFLICT(key) DO NOTHING",
+		[envUrl],
+	);
+}
 
 function resolveDbPath(): string {
 	return process.env.DB_PATH ?? DEFAULT_DB_PATH;
@@ -87,6 +112,7 @@ export class Database {
 		const db = await openSqliteDatabase(dbPath);
 		const wrapper = new Database(db);
 		await wrapper.exec(SCHEMA_SQL);
+		await seedDefaultSettings(wrapper);
 		return wrapper;
 	}
 

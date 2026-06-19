@@ -1,6 +1,7 @@
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
+import SettingsIcon from "@mui/icons-material/Settings";
 import SettingsInputAntennaIcon from "@mui/icons-material/SettingsInputAntenna";
 import {
 	AppBar,
@@ -62,6 +63,11 @@ export default function AppHeader({ activeTab, onTabChange }: AppHeaderProps) {
 					icon={<SettingsInputAntennaIcon sx={{ fontSize: 16 }} />}
 					iconPosition="start"
 					label="Channel Admin"
+				/>
+				<Tab
+					icon={<SettingsIcon sx={{ fontSize: 16 }} />}
+					iconPosition="start"
+					label="Settings"
 				/>
 			</Tabs>
 		</AppBar>

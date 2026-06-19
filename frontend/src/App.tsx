@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 
 import AppHeader from "./components/AppHeader";
 import ChannelAdmin from "./components/ChannelAdmin";
+import SettingsView from "./components/SettingsView";
 import TabPanel from "./components/TabPanel";
 import TvGuide from "./components/TvGuide";
 import { ColorModeProvider, useColorMode } from "./context/ColorModeProvider";
@@ -38,6 +39,9 @@ function AppContent() {
 					</TabPanel>
 					<TabPanel value={activeTab} index={1}>
 						<ChannelAdmin />
+					</TabPanel>
+					<TabPanel value={activeTab} index={2}>
+						<SettingsView />
 					</TabPanel>
 				</Container>
 			</Box>

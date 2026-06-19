@@ -219,29 +219,36 @@ async function downloadAndDecompress(url: string): Promise<string> {
 	}
 }
 
-function shouldUseMockEpg(sourceUrl?: string): boolean {
-	if (process.env.USE_MOCK === "true") {
-		return true;
-	}
-
-	const url = sourceUrl ?? process.env.EPG_SOURCE_URL;
-	return !url || url.trim().length === 0;
+async function getEpgUrlFromDatabase(): Promise<string | null> {
+	const db = getDb();
+	const row = await db.get<{ value: string }>(
+		"SELECT value FROM settings WHERE key = ?",
+		["epg_url"],
+	);
+	const value = row?.value?.trim();
+	return value && value.length > 0 ? value : null;
 }
 
-function generateMockEpg(): string {
-	return generateMockEpgXml();
+async function resolveEpgUrl(sourceUrl?: string): Promise<string | null> {
+	if (sourceUrl?.trim()) {
+		return sourceUrl.trim();
+	}
+	return getEpgUrlFromDatabase();
 }
 
 async function loadEpgXml(
 	sourceUrl?: string,
 ): Promise<{ xml: string; source: string }> {
-	if (shouldUseMockEpg(sourceUrl)) {
-		return { xml: generateMockEpg(), source: "mock-epg-generator" };
+	if (process.env.USE_MOCK === "true") {
+		return { xml: generateMockEpgXml(), source: "mock-epg-generator" };
 	}
 
-	const url = sourceUrl ?? process.env.EPG_SOURCE_URL;
+	const url = await resolveEpgUrl(sourceUrl);
 	if (!url) {
-		throw new Error("EPG_SOURCE_URL is not configured");
+		console.error(
+			"EPG URL is not configured. Set it in Settings before parsing.",
+		);
+		throw new Error("EPG URL is not configured");
 	}
 
 	return { xml: await downloadAndDecompress(url), source: url };

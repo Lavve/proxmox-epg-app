@@ -30,3 +30,11 @@ export interface Program {
 export interface ApiErrorResponse {
 	error: string;
 }
+
+export interface Settings {
+	epg_url: string | null;
+}
+
+export interface UpdateSettingsBody {
+	epg_url: string;
+}

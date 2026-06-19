@@ -24,7 +24,8 @@ export async function apiRequest<T>(
 	path: string,
 	init?: RequestInit,
 ): Promise<T> {
-	const response = await fetch(`${getApiBaseUrl()}${path}`, {
+	const url = `${getApiBaseUrl()}${path}`;
+	const response = await fetch(url, {
 		headers: {
 			Accept: "application/json",
 			...(init?.body ? { "Content-Type": "application/json" } : {}),
@@ -34,7 +35,12 @@ export async function apiRequest<T>(
 	});
 
 	if (!response.ok) {
-		throw new ApiError(response.status, await parseError(response));
+		const detail = await parseError(response);
+		const message =
+			response.status === 404
+				? `${detail} (${url}) — is the backend running with the latest code?`
+				: detail;
+		throw new ApiError(response.status, message);
 	}
 
 	return (await response.json()) as T;
