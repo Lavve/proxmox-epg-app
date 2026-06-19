@@ -8,6 +8,7 @@ import SettingsView from "./components/SettingsView";
 import TabPanel from "./components/TabPanel";
 import TvGuide from "./components/TvGuide";
 import { ColorModeProvider, useColorMode } from "./context/ColorModeProvider";
+import { DisplayFormatProvider } from "./context/DisplayFormatProvider";
 import { createAppTheme } from "./theme/theme";
 
 const queryClient = new QueryClient({
@@ -53,7 +54,9 @@ export default function App() {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<ColorModeProvider>
-				<AppContent />
+				<DisplayFormatProvider>
+					<AppContent />
+				</DisplayFormatProvider>
 			</ColorModeProvider>
 		</QueryClientProvider>
 	);

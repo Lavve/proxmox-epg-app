@@ -2,6 +2,11 @@ import { gunzipSync } from "node:zlib";
 import { XMLParser } from "fast-xml-parser";
 import type { Database } from "../database/db";
 import { getDb } from "../database/db";
+import {
+	clearEpgData,
+	MOCK_EPG_SOURCE,
+	saveEpgMetadata,
+} from "../database/settingsStore";
 import { generateMockEpgXml } from "./mockEpgGenerator";
 
 const INSERT_BATCH_SIZE = 150;
@@ -25,6 +30,7 @@ export interface ParseEpgResult {
 	channels: number;
 	programs: number;
 	durationMs: number;
+	source: string;
 }
 
 function normalizeToArray<T>(value: T | T[] | undefined): T[] {
@@ -194,7 +200,13 @@ async function replacePrograms(
 }
 
 async function downloadAndDecompress(url: string): Promise<string> {
-	const response = await fetch(url, { redirect: "follow" });
+	const response = await fetch(url, {
+		redirect: "follow",
+		headers: {
+			"User-Agent": "proxmox-epg-app/1.0",
+			Accept: "application/gzip, application/xml, text/xml, */*",
+		},
+	});
 	if (!response.ok) {
 		throw new Error(
 			`Failed to fetch EPG source (${response.status} ${response.statusText})`,
@@ -203,7 +215,9 @@ async function downloadAndDecompress(url: string): Promise<string> {
 
 	const compressed = Buffer.from(await response.arrayBuffer());
 	if (compressed.length === 0) {
-		throw new Error("EPG source returned an empty response");
+		throw new Error(
+			`EPG source returned an empty response from ${url}. The URL may be expired — generate a new feed on open-epg.com and save it in Settings.`,
+		);
 	}
 
 	try {
@@ -236,11 +250,15 @@ async function resolveEpgUrl(sourceUrl?: string): Promise<string | null> {
 	return getEpgUrlFromDatabase();
 }
 
+export function isMockModeEnabled(): boolean {
+	return process.env.USE_MOCK === "true";
+}
+
 async function loadEpgXml(
 	sourceUrl?: string,
 ): Promise<{ xml: string; source: string }> {
-	if (process.env.USE_MOCK === "true") {
-		return { xml: generateMockEpgXml(), source: "mock-epg-generator" };
+	if (isMockModeEnabled()) {
+		return { xml: generateMockEpgXml(), source: MOCK_EPG_SOURCE };
 	}
 
 	const url = await resolveEpgUrl(sourceUrl);
@@ -275,28 +293,48 @@ function parseXmltvDocument(xml: string): {
 
 export async function parseEpg(sourceUrl?: string): Promise<ParseEpgResult> {
 	const startedAt = Date.now();
-	const { xml, source } = await loadEpgXml(sourceUrl);
-
-	console.log(`EPG parser started (source: ${source})`);
-
-	const { channels, programs } = parseXmltvDocument(xml);
 	const db = getDb();
 
-	await db.transaction(async (database) => {
-		await upsertChannels(database, channels);
-		await replacePrograms(database, programs);
-	});
+	try {
+		const { xml, source } = await loadEpgXml(sourceUrl);
 
-	const durationMs = Date.now() - startedAt;
-	const result: ParseEpgResult = {
-		channels: channels.length,
-		programs: programs.length,
-		durationMs,
-	};
+		console.log(`EPG parser started (source: ${source})`);
 
-	console.log(
-		`EPG parser finished: ${result.channels} channels, ${result.programs} programs in ${result.durationMs}ms`,
-	);
+		const { channels, programs } = parseXmltvDocument(xml);
 
-	return result;
+		if (!isMockModeEnabled() && channels.length === 0) {
+			throw new Error("EPG source contained no channels");
+		}
+
+		await db.transaction(async (database) => {
+			await upsertChannels(database, channels);
+			await replacePrograms(database, programs);
+			await saveEpgMetadata(database, { valid: true, source });
+		});
+
+		const durationMs = Date.now() - startedAt;
+		const result: ParseEpgResult = {
+			channels: channels.length,
+			programs: programs.length,
+			durationMs,
+			source,
+		};
+
+		console.log(
+			`EPG parser finished: ${result.channels} channels, ${result.programs} programs in ${result.durationMs}ms`,
+		);
+
+		return result;
+	} catch (error) {
+		if (!isMockModeEnabled()) {
+			await db.transaction(async (database) => {
+				await clearEpgData(database);
+				await saveEpgMetadata(database, { valid: false, source: null });
+			});
+			console.error(
+				"Live EPG parse failed; cleared guide data to avoid showing stale or mock content.",
+			);
+		}
+		throw error;
+	}
 }

@@ -17,23 +17,6 @@ export function getGuideTimeWindow(hoursAhead = 12): GuideTimeWindow {
 	};
 }
 
-export function formatLocalTime(unixSeconds: number): string {
-	return new Date(unixSeconds * 1000).toLocaleTimeString(undefined, {
-		hour: "2-digit",
-		minute: "2-digit",
-	});
-}
-
-export function formatLocalDateTime(unixSeconds: number): string {
-	return new Date(unixSeconds * 1000).toLocaleString(undefined, {
-		weekday: "short",
-		month: "short",
-		day: "numeric",
-		hour: "2-digit",
-		minute: "2-digit",
-	});
-}
-
 export function formatDurationMinutes(
 	startUnix: number,
 	endUnix: number,

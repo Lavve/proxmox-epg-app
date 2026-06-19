@@ -12,12 +12,9 @@ import {
 import { alpha, useTheme } from "@mui/material/styles";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useDisplayFormat } from "../context/displayFormatContext";
 import type { Channel, Program } from "../types/api";
-import {
-	formatDurationMinutes,
-	formatLocalDateTime,
-	formatLocalTime,
-} from "../utils/time";
+import { formatDurationMinutes } from "../utils/time";
 
 const PROGRAM_GAP = 4;
 
@@ -178,6 +175,7 @@ function ProgramBlock({
 	layout: EpgLayout;
 }) {
 	const theme = useTheme();
+	const { formatTime, formatDateTime } = useDisplayFormat();
 	const pixelsPerSecond = getPixelsPerSecond(layout);
 	const left = Math.max(
 		0,
@@ -194,7 +192,7 @@ function ProgramBlock({
 
 	const tooltip = [
 		program.title,
-		`${formatLocalDateTime(program.start_time)} - ${formatLocalTime(program.end_time)}`,
+		`${formatDateTime(program.start_time)} - ${formatTime(program.end_time)}`,
 		program.description,
 		program.category ? `Category: ${program.category}` : null,
 	]
@@ -270,7 +268,7 @@ function ProgramBlock({
 							whiteSpace: "nowrap",
 						}}
 					>
-						{formatLocalTime(program.start_time)} ·{" "}
+						{formatTime(program.start_time)} ·{" "}
 						{formatDurationMinutes(program.start_time, program.end_time)}m
 					</Typography>
 				)}
@@ -337,12 +335,13 @@ function TimeHeader({
 	timelineWidth: number;
 	layout: EpgLayout;
 }) {
+	const { formatTime } = useDisplayFormat();
 	const labels: { left: number; label: string }[] = [];
 
 	for (let timestamp = windowStart; timestamp < windowEnd; timestamp += 3600) {
 		labels.push({
 			left: getTimelineOffset(timestamp, windowStart, layout),
-			label: formatLocalTime(timestamp),
+			label: formatTime(timestamp),
 		});
 	}
 

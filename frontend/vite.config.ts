@@ -13,11 +13,19 @@ export default defineConfig({
 				target: backendTarget,
 				changeOrigin: true,
 			},
+			"/health": {
+				target: backendTarget,
+				changeOrigin: true,
+			},
 		},
 	},
 	preview: {
 		proxy: {
 			"/api": {
+				target: backendTarget,
+				changeOrigin: true,
+			},
+			"/health": {
 				target: backendTarget,
 				changeOrigin: true,
 			},

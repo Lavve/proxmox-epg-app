@@ -31,10 +31,19 @@ export interface ApiErrorResponse {
 	error: string;
 }
 
+export type TimeFormat = "12h" | "24h";
+export type DateFormat = "short" | "medium";
+
 export interface Settings {
 	epg_url: string | null;
+	epg_data_valid: boolean;
+	epg_last_source: string | null;
+	time_format: TimeFormat;
+	date_format: DateFormat;
 }
 
 export interface UpdateSettingsBody {
-	epg_url: string;
+	epg_url?: string;
+	time_format?: TimeFormat;
+	date_format?: DateFormat;
 }

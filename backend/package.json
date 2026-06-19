@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "node --watch -r ts-node/register src/index.ts",
+		"predev": "npx --yes kill-port 3001",
+		"dev": "ts-node src/index.ts",
 		"build": "tsc",
 		"start": "node dist/index.js",
 		"seed": "ts-node src/scripts/seed.ts",

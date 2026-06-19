@@ -6,6 +6,7 @@ import {
 	Avatar,
 	Box,
 	CircularProgress,
+	Container,
 	IconButton,
 	Paper,
 	Switch,
@@ -18,8 +19,11 @@ import {
 	Typography,
 } from "@mui/material";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { fetchHealth } from "../api/admin";
 import { fetchChannels, updateChannel } from "../api/channels";
+import { fetchSettings } from "../api/settings";
 import type { Channel } from "../types/api";
+import EpgUnavailableMessage from "./EpgUnavailableMessage";
 
 function ChannelIcon({ channel }: { channel: Channel }) {
 	if (channel.icon) {
@@ -45,6 +49,14 @@ function ChannelIcon({ channel }: { channel: Channel }) {
 
 export default function ChannelAdmin() {
 	const queryClient = useQueryClient();
+	const settingsQuery = useQuery({
+		queryKey: ["settings"],
+		queryFn: fetchSettings,
+	});
+	const healthQuery = useQuery({
+		queryKey: ["health"],
+		queryFn: fetchHealth,
+	});
 	const channelsQuery = useQuery({
 		queryKey: ["channels"],
 		queryFn: fetchChannels,
@@ -59,7 +71,7 @@ export default function ChannelAdmin() {
 		},
 	});
 
-	if (channelsQuery.isLoading) {
+	if (channelsQuery.isLoading || settingsQuery.isLoading) {
 		return (
 			<Box sx={{ display: "flex", justifyContent: "center", py: 4 }}>
 				<CircularProgress size={24} />
@@ -67,104 +79,119 @@ export default function ChannelAdmin() {
 		);
 	}
 
-	if (channelsQuery.isError) {
+	if (channelsQuery.isError || settingsQuery.isError) {
+		const error = channelsQuery.error ?? settingsQuery.error;
 		return (
 			<Alert severity="error" sx={{ m: 1 }}>
-				Failed to load channels: {channelsQuery.error.message}
+				Failed to load channels: {error?.message}
 			</Alert>
 		);
+	}
+
+	const showEpgUnavailable =
+		!healthQuery.data?.use_mock &&
+		settingsQuery.data !== undefined &&
+		!settingsQuery.data.epg_data_valid;
+
+	if (showEpgUnavailable) {
+		return <EpgUnavailableMessage />;
 	}
 
 	const channels = channelsQuery.data ?? [];
 
 	return (
-		<Box sx={{ p: 1, height: "100%", boxSizing: "border-box" }}>
-			<Typography
-				variant="body2"
-				color="text.secondary"
-				sx={{ mb: 1, px: 0.5 }}
-			>
-				Enable or disable channels. Disabled channels are hidden from the TV
-				guide.
-			</Typography>
+		<Container maxWidth="sm" sx={{ py: 2 }}>
+			<Box sx={{ p: 1, height: "100%", boxSizing: "border-box" }}>
+				<Typography
+					variant="body2"
+					color="text.secondary"
+					sx={{ mb: 1, px: 0.5 }}
+				>
+					Enable or disable channels. Disabled channels are hidden from the TV
+					guide.
+				</Typography>
 
-			<TableContainer
-				component={Paper}
-				variant="outlined"
-				sx={{ maxHeight: "100%" }}
-			>
-				<Table size="small" stickyHeader>
-					<TableHead>
-						<TableRow>
-							<TableCell width={48} />
-							<TableCell>Channel</TableCell>
-							<TableCell width={100} align="center">
-								Enabled
-							</TableCell>
-							<TableCell width={80} align="center">
-								Favorite
-							</TableCell>
-						</TableRow>
-					</TableHead>
-					<TableBody>
-						{channels.map((channel) => (
-							<TableRow key={channel.id} hover>
-								<TableCell>
-									<ChannelIcon channel={channel} />
-								</TableCell>
-								<TableCell>
-									<Typography variant="body2" noWrap>
-										{channel.name}
-									</Typography>
-									<Typography variant="caption" color="text.secondary" noWrap>
-										{channel.id}
-									</Typography>
-								</TableCell>
-								<TableCell align="center">
-									<Switch
-										checked={channel.is_enabled}
-										disabled={updateMutation.isPending}
-										onChange={(event) => {
-											updateMutation.mutate({
-												id: channel.id,
-												is_enabled: event.target.checked,
-											});
-										}}
-										aria-label={`Toggle ${channel.name}`}
-									/>
-								</TableCell>
-								<TableCell align="center">
-									<IconButton
-										aria-label={`${channel.is_favorite ? "Remove" : "Add"} ${channel.name} favorite`}
-										disabled
-										size="small"
-									>
-										{channel.is_favorite ? (
-											<StarIcon sx={{ fontSize: 16, color: "warning.main" }} />
-										) : (
-											<StarBorderIcon sx={{ fontSize: 16 }} />
-										)}
-									</IconButton>
-								</TableCell>
-							</TableRow>
-						))}
-						{channels.length === 0 && (
+				<TableContainer
+					component={Paper}
+					variant="outlined"
+					sx={{ maxHeight: "100%" }}
+				>
+					<Table size="small" stickyHeader>
+						<TableHead>
 							<TableRow>
-								<TableCell colSpan={4}>
-									<Typography
-										variant="body2"
-										color="text.secondary"
-										align="center"
-										sx={{ py: 2 }}
-									>
-										No channels found. Run the EPG parser on the backend first.
-									</Typography>
+								<TableCell width={48} />
+								<TableCell>Channel</TableCell>
+								<TableCell width={100} align="center">
+									Enabled
+								</TableCell>
+								<TableCell width={80} align="center">
+									Favorite
 								</TableCell>
 							</TableRow>
-						)}
-					</TableBody>
-				</Table>
-			</TableContainer>
-		</Box>
+						</TableHead>
+						<TableBody>
+							{channels.map((channel) => (
+								<TableRow key={channel.id} hover>
+									<TableCell>
+										<ChannelIcon channel={channel} />
+									</TableCell>
+									<TableCell>
+										<Typography variant="body2" noWrap>
+											{channel.name}
+										</Typography>
+										<Typography variant="caption" color="text.secondary" noWrap>
+											{channel.id}
+										</Typography>
+									</TableCell>
+									<TableCell align="center">
+										<Switch
+											checked={channel.is_enabled}
+											disabled={updateMutation.isPending}
+											onChange={(event) => {
+												updateMutation.mutate({
+													id: channel.id,
+													is_enabled: event.target.checked,
+												});
+											}}
+											aria-label={`Toggle ${channel.name}`}
+										/>
+									</TableCell>
+									<TableCell align="center">
+										<IconButton
+											aria-label={`${channel.is_favorite ? "Remove" : "Add"} ${channel.name} favorite`}
+											disabled
+											size="small"
+										>
+											{channel.is_favorite ? (
+												<StarIcon
+													sx={{ fontSize: 16, color: "warning.main" }}
+												/>
+											) : (
+												<StarBorderIcon sx={{ fontSize: 16 }} />
+											)}
+										</IconButton>
+									</TableCell>
+								</TableRow>
+							))}
+							{channels.length === 0 && (
+								<TableRow>
+									<TableCell colSpan={4}>
+										<Typography
+											variant="body2"
+											color="text.secondary"
+											align="center"
+											sx={{ py: 2 }}
+										>
+											No channels found. Configure your EPG URL in Settings and
+											click Refresh EPG Data.
+										</Typography>
+									</TableCell>
+								</TableRow>
+							)}
+						</TableBody>
+					</Table>
+				</TableContainer>
+			</Box>
+		</Container>
 	);
 }

@@ -10,11 +10,15 @@ import {
 } from "@mui/material";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useMemo, useState } from "react";
+import { fetchHealth } from "../api/admin";
 import { fetchChannels, updateChannel } from "../api/channels";
 import { fetchPrograms } from "../api/programs";
+import { fetchSettings } from "../api/settings";
+import { useDisplayFormat } from "../context/displayFormatContext";
 import type { Program } from "../types/api";
-import { formatLocalTime, getGuideTimeWindow } from "../utils/time";
+import { getGuideTimeWindow } from "../utils/time";
 import EpgGrid from "./EpgGrid";
+import EpgUnavailableMessage from "./EpgUnavailableMessage";
 
 function matchesSearch(program: Program, query: string): boolean {
 	const normalized = query.trim().toLowerCase();
@@ -30,8 +34,19 @@ function matchesSearch(program: Program, query: string): boolean {
 
 export default function TvGuide() {
 	const queryClient = useQueryClient();
+	const { formatGuideRange } = useDisplayFormat();
 	const [searchQuery, setSearchQuery] = useState("");
 	const timeWindow = useMemo(() => getGuideTimeWindow(24), []);
+
+	const settingsQuery = useQuery({
+		queryKey: ["settings"],
+		queryFn: fetchSettings,
+	});
+
+	const healthQuery = useQuery({
+		queryKey: ["health"],
+		queryFn: fetchHealth,
+	});
 
 	const channelsQuery = useQuery({
 		queryKey: ["channels"],
@@ -94,8 +109,19 @@ export default function TvGuide() {
 		);
 	}, [enabledChannels, filteredPrograms, searchQuery]);
 
-	const isLoading = channelsQuery.isLoading || programsQuery.isLoading;
-	const loadError = channelsQuery.error ?? programsQuery.error;
+	const isLoading =
+		channelsQuery.isLoading ||
+		programsQuery.isLoading ||
+		settingsQuery.isLoading;
+	const loadError =
+		channelsQuery.error ?? programsQuery.error ?? settingsQuery.error;
+
+	const showEpgUnavailable =
+		!healthQuery.data?.use_mock &&
+		settingsQuery.data !== undefined &&
+		!settingsQuery.data.epg_data_valid;
+
+	const showGuideTimeRange = !showEpgUnavailable && !isLoading && !loadError;
 
 	return (
 		<Box
@@ -137,18 +163,19 @@ export default function TvGuide() {
 						},
 					}}
 				/>
-				<Typography
-					variant="caption"
-					color="text.secondary"
-					sx={{
-						whiteSpace: "nowrap",
-						px: { xs: 0.5, sm: 0 },
-						alignSelf: { xs: "flex-start", sm: "center" },
-					}}
-				>
-					{formatLocalTime(timeWindow.startUnix)} -{" "}
-					{formatLocalTime(timeWindow.endUnix)}
-				</Typography>
+				{showGuideTimeRange && (
+					<Typography
+						variant="caption"
+						color="text.secondary"
+						sx={{
+							whiteSpace: "nowrap",
+							px: { xs: 0.5, sm: 0 },
+							alignSelf: { xs: "flex-start", sm: "center" },
+						}}
+					>
+						{formatGuideRange(timeWindow.startUnix, timeWindow.endUnix)}
+					</Typography>
+				)}
 			</Box>
 
 			{isLoading && (
@@ -163,7 +190,9 @@ export default function TvGuide() {
 				</Alert>
 			)}
 
-			{!isLoading && !loadError && (
+			{showEpgUnavailable && <EpgUnavailableMessage />}
+
+			{!isLoading && !loadError && !showEpgUnavailable && (
 				<Paper
 					variant="outlined"
 					sx={{ flex: 1, minHeight: 0, overflow: "hidden" }}
